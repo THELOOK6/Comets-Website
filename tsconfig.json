@@ -8,16 +8,13 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "module": "esnext",
-    "noEmit": false,
-    "declaration": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
     "skipLibCheck": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "files": [],
   "references": [
-    {
-      "path": "./tsconfig.node.json"
-    },
     {
       "path": "./tsconfig.app.json"
     }
