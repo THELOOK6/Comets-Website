@@ -57,7 +57,7 @@ import Footer from '../components/footer.vue'
         <div class="LinkDiv">
           <!-- Drillmex -->
           <a class="ImageLink" href="https://drillmex.com/" target="_blank">
-            <img class="drillmex" src="../assets/LOGOS_SPONSORS/Drillmex.svg" alt="Drillmex" />
+            <img class="drillmex" src="../assets/LOGOS_SPONSORS/drillmex.svg" alt="Drillmex" />
           </a>
           <!-- ENA -->
           <a class="ImageLink" href="https://www.ena.ca/ecole-nationale-d-aerotechnique/" target="_blank">
@@ -126,7 +126,7 @@ import Footer from '../components/footer.vue'
           </a>
           <!-- Vibrant Performance -->
           <a class="ImageLink" href="https://vibrantperformance.com/" target="_blank">
-            <img class="vibrant" src="../assets/LOGOS_SPONSORS/Vibrant.svg" alt="Vibrant Performance" />
+            <img class="vibrant" src="../assets/LOGOS_SPONSORS/vibrant.svg" alt="Vibrant Performance" />
           </a>
           <!-- Opal-RT -->
           <a class="ImageLink" href="https://www.opal-rt.com/" target="_blank">
@@ -138,7 +138,7 @@ import Footer from '../components/footer.vue'
           </a>
           <!-- Furick -->
           <a class="ImageLink" href="https://furickcup.com/" target="_blank">
-            <img class="furick" src="../assets/LOGOS_SPONSORS/Furick.svg" alt="Furick" />
+            <img class="furick" src="../assets/LOGOS_SPONSORS/furick.svg" alt="Furick" />
           </a>
           <!-- General -->
           <a class="ImageLink" href="https://generaltools.com/" target="_blank">
