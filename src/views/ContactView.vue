@@ -11,7 +11,7 @@ import Map from '@/components/Map.vue'
     <NavBar />
     <div class="content">
       <div class="mapContainer">
-        <iframe class="Map" allowfullscreen="" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5491.523246577794!2d-73.562965!3d45.495101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e9357b01ffef3ef!2s%C3%89cole%20de%20Technologie%20Sup%C3%A9rieure!5e0!3m2!1sfr!2sca!4v1641331931733!5m2!1sfr!2sca" style="border: 0px; animation-play-state: running;"></iframe>
+        <iframe class="Map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5491.523246577794!2d-73.562965!3d45.495101!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e9357b01ffef3ef!2s%C3%89cole%20de%20Technologie%20Sup%C3%A9rieure!5e0!3m2!1sfr!2sca!4v1641331931733!5m2!1sfr!2sca" style="border: 0px; animation-play-state: running;"></iframe>
       </div>
       <contactform />
     </div>
