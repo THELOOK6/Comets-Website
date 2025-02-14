@@ -2,7 +2,7 @@
 // import NavBar from '../components/floatingNavBar.vue'
 import NavBar from '../components/RespNavbarFullPage.vue' 
 import Footer from '../components/footer.vue'
-import contactform from '@/components/contactform.vue'
+import contactform from '../components/contactform.vue'
 import Map from '@/components/Map.vue'
 </script>
 
