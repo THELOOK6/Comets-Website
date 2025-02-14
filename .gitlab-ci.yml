@@ -1,0 +1,18 @@
+image: node:18
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install
+
+pages:
+  script:
+    - npm run build
+    - mv dist public  # Move the built files to the "public" folder
+  artifacts:
+    paths:
+      - public
+  only:
+    - main  # This ensures the pipeline runs on the "main" branch (adjust as needed)

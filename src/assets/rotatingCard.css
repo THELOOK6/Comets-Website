@@ -1,0 +1,231 @@
+
+.card.card-background {
+    align-items: center;
+  }
+  .card.card-background .full-background {
+    background-position: 50%;
+    background-size: cover;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 0.75rem;
+  }
+  .card.card-background .card-body {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  .card.card-background .card-body .content-center,
+  .card.card-background .card-body .content-left {
+    min-height: 330px;
+    max-width: 450px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .card.card-background .card-body .content-center {
+    text-align: center;
+  }
+  .card.card-background .card-body.body-left {
+    width: 90%;
+  }
+  .card.card-background .card-body .author .name span,
+  .card.card-background .card-body .author .name .stats {
+    color: #fff;
+  }
+  .card.card-background:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: block;
+    content: "";
+    background: rgba(0, 0, 0, 0.56);
+    border-radius: 0.75rem;
+  }
+  .card.card-background.card-background-mask-primary:before {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .card.card-background.card-background-mask-primary:after {
+    background-image: linear-gradient(195deg, #EC407A 0%, #D81B60 100%);
+    opacity: 0.85;
+  }
+  .card.card-background.card-background-mask-secondary:before {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .card.card-background.card-background-mask-secondary:after {
+    background-image: linear-gradient(195deg, #747b8a 0%, #495361 100%);
+    opacity: 0.85;
+  }
+  .card.card-background.card-background-mask-success:before {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .card.card-background.card-background-mask-success:after {
+    background-image: linear-gradient(195deg, #66BB6A 0%, #43A047 100%);
+    opacity: 0.85;
+  }
+  .card.card-background.card-background-mask-info:before {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .card.card-background.card-background-mask-info:after {
+    background-image: linear-gradient(195deg, #49a3f1 0%, #1A73E8 100%);
+    opacity: 0.85;
+  }
+  .card.card-background.card-background-mask-warning:before {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .card.card-background.card-background-mask-warning:after {
+    background-image: linear-gradient(195deg, #FFA726 0%, #FB8C00 100%);
+    opacity: 0.85;
+  }
+  .card.card-background.card-background-mask-danger:before {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .card.card-background.card-background-mask-danger:after {
+    background-image: linear-gradient(195deg, #EF5350 0%, #E53935 100%);
+    opacity: 0.85;
+  }
+  .card.card-background.card-background-mask-light:before {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .card.card-background.card-background-mask-light:after {
+    background-image: linear-gradient(195deg, #EBEFF4 0%, #CED4DA 100%);
+    opacity: 0.85;
+  }
+  .card.card-background.card-background-mask-dark:before {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .card.card-background.card-background-mask-dark:after {
+    background-image: linear-gradient(195deg, #42424a 0%, #191919 100%);
+    opacity: 0.85;
+  }
+  .card.card-background .card-category {
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  .card.card-background .card-description {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  
+  .rotating-card-container {
+    -o-perspective: 800px;
+    -ms-perspective: 800px;
+    perspective: 800px;
+  }
+  .rotating-card-container .card-rotate {
+    background: transparent;
+    box-shadow: none;
+  }
+  .rotating-card-container .card-rotate:after {
+    display: none;
+  }
+  .rotating-card-container .card {
+    transition: all 0.8s cubic-bezier(0.34, 1.45, 0.7, 1);
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  .rotating-card-container .card .back,
+  .rotating-card-container .card .front {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-content: center;
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+  .rotating-card-container .card .back .card-body,
+  .rotating-card-container .card .front .card-body {
+    justify-content: center;
+    align-content: center;
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+  .rotating-card-container .card .back:after,
+  .rotating-card-container .card .front:after {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "";
+    border-radius: 0.5rem;
+    background-image: linear-gradient(195deg, #EC407A, #D81B60);
+    opacity: 0.85;
+  }
+  .rotating-card-container .card .front {
+    z-index: 2;
+    position: relative;
+  }
+  .rotating-card-container .card .back {
+    transform: rotateY(180deg);
+    z-index: 5;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
+  .rotating-card-container .card .back.back-background .card-body {
+    position: relative;
+    z-index: 2;
+  }
+  .rotating-card-container .card .back .card-footer .btn {
+    margin: 0;
+  }
+  .rotating-card-container .card .back .card-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .rotating-card-container:not(.manual-flip):hover .card {
+    transform: rotateY(180deg);
+  }
+  .rotating-card-container.hover.manual-flip .card {
+    transform: rotateY(180deg);
+  }
+  .card-profile .rotating-card-container .front {
+    text-align: left;
+  }
+  
+  .back-background .card-body {
+    min-height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  /*       Fix bug for IE      */
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .rotating-card-container .card .back,
+  .rotating-card-container .card .front {
+      -webkit-backface-visibility: visible;
+              backface-visibility: visible;
+    }
+    .rotating-card-container .card .back {
+      visibility: hidden;
+      transition: visibility 0.3s cubic-bezier(0.34, 1.45, 0.7, 1);
+    }
+    .rotating-card-container .card .front {
+      z-index: 4;
+    }
+    .rotating-card-container.manual-flip.hover .card .back,
+  .rotating-card-container:not(.manual-flip):hover .card .back {
+      z-index: 5;
+      visibility: visible;
+    }
+  }
